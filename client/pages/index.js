@@ -1,5 +1,6 @@
+import React from 'react'
 import Link from 'next/link'
-import Name from '../components/Name'
+import { Name } from '../components'
 
 const Page = () => (
   <div>

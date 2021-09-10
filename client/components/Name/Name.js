@@ -1,3 +1,4 @@
+import React from 'react'
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag'
 
@@ -13,7 +14,7 @@ const Name = () => {
   );
 }
 
-const GET_NAME = gql`
+export const GET_NAME = gql`
   query name {
     name
   }
