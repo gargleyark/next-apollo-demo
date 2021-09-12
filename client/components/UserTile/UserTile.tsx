@@ -9,6 +9,7 @@ import {
 
 export interface User {
   name: string;
+  id: string;
   address: {
     country: string;
     city: string;
@@ -19,7 +20,7 @@ export interface User {
     address2: string;
   }
   email: string;
-  phoneNumber: string;
+  phoneNumber?: string;
 }
 
 const useStyles = makeStyles({
@@ -44,7 +45,7 @@ const UserTile = ({ name, email, address: {
   const classes = useStyles()
 
   return (
-    <Box p={2} className={classes.root}>
+    <Box p={2} className={classes.root} data-testid="user-tile">
       <Card className={classes.fullWidth}>
         <CardContent>
           <Typography variant="h5" component="h2">
