@@ -35,8 +35,8 @@ export default (): JSX.Element => {
     <span>
       <Typography variant={'h3'}>Users</Typography>
       <Grid container>
-        {loading ? '...' : data?.users.map(item => (
-          <Grid container item xs={12} md={6} lg={4} xl={3} justifyContent="center">
+        {loading ? '...' : data?.users.map((item: User) => (
+          <Grid container item xs={12} md={6} lg={4} xl={3} justifyContent="center" key={item.id}>
             <UserTile {...item} />
           </Grid>
         ))}
@@ -53,6 +53,7 @@ export default (): JSX.Element => {
 const GET_USERS = gql`
   query users($offset: Int, $limit: Int) {
     users(offset: $offset, limit: $limit) {
+      id
       name
       address {
         country
