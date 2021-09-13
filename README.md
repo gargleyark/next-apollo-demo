@@ -15,8 +15,8 @@ data generator library, btw love https://www.npmjs.com/package/casual
 of card tiles. The page needs to be responsive.
 - [x] Implement Lazyloading / Infinite scrolls so that you load 20 cards each time you
 click a ‘Load More’ button, which you would need to create.
-- [ ] Add Unit Tests using Jest and React Testing Library.
-- [ ] Dockerize the server and client app and use docker-compose so that we can run the
+- [x] Add Unit Tests using Jest and React Testing Library.
+- [x] Dockerize the server and client app and use docker-compose so that we can run the
 app locally using docker-compose.
 - [ ] Deploy your App on Heroku. And send us a link to the app.
 - [ ] Write cypress end to end test for the page you created.
@@ -65,3 +65,19 @@ To build and start:
 
 `npm run build`
 `npm run start`
+
+## Running with docker
+
+To build the docker image for the client and server, run the following:
+
+In the `/client` folder:
+
+`docker build -t client .`
+
+In the `/server` folder:
+
+`docker build -t server .`
+
+Then in the `next-apollo-demo` folder:
+
+`docker-compose up`
