@@ -29,6 +29,8 @@ This repo contains both a server and a client, which each run individually. The 
 
 ### Server:  
 
+Go to the `server` folder
+
 Installation:
 
 `npm install`  
@@ -42,6 +44,8 @@ To Start in dev mode (hot reloading)
 `npm run dev`
 
 ### Client:  
+
+Go to the `client` folder
 
 Installation:
 
@@ -81,3 +85,7 @@ In the `/server` folder:
 Then in the `next-apollo-demo` folder:
 
 `docker-compose up`
+
+## Storybook
+
+Storybook is added to the `client` folder, to run it go to this folder and run `npm run storybook`
