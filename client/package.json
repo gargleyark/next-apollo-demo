@@ -6,7 +6,9 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "license": "MIT",
   "dependencies": {
@@ -26,9 +28,15 @@
   },
   "devDependencies": {
     "@apollo/react-testing": "^4.0.0",
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "babel-jest": "^27.1.1",
+    "babel-loader": "^8.2.2",
     "jest": "^27.1.1"
   }
 }
